@@ -148,7 +148,7 @@ export function EditableField({
                   className="w-full border px-2 py-1 rounded-md text-sm"
                   placeholder="Add an option"
                   onChange={(e) => {
-                    let newValue = e.target.value;
+                    const newValue = e.target.value;
                     updateField(field.id, { options: [newValue] });
                   }}
                 />
@@ -156,7 +156,7 @@ export function EditableField({
                   size={"icon"}
                   variant={"ghost"}
                   onClick={() => {
-                    let x = field.options || [];
+                    const x = field.options || [];
                     const newOptions = [...x, ""];
                     updateField(field.id, { options: newOptions });
                   }}
@@ -176,8 +176,8 @@ export function EditableField({
                   className="w-full border px-2 py-1 rounded-md text-sm"
                   value={option}
                   onChange={(e) => {
-                    let newValue = e.target.value;
-                    let t = field.options || [];
+                    const newValue = e.target.value;
+                    const t = field.options || [];
                     updateField(field.id, {
                       options: [
                         ...t.slice(0, index),
@@ -191,7 +191,7 @@ export function EditableField({
                   size={"icon"}
                   variant={"ghost"}
                   onClick={() => {
-                    let x = field.options || [];
+                    const x = field.options || [];
                     const newOptions = [...x, ""];
                     updateField(field.id, { options: newOptions });
                   }}
