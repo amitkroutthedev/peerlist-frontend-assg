@@ -20,6 +20,7 @@ import {
 import { LuGripVertical } from "react-icons/lu";
 import { MdOutlineShortText } from "react-icons/md";
 import { Button } from "./ui/Button";
+import { DraggableProvided } from "@hello-pangea/dnd";
 
 interface EditableFieldProps {
   className?: string;
@@ -27,7 +28,7 @@ interface EditableFieldProps {
   defaultHelpText?: string;
   inputtype: string;
   field: FormField;
-  provided?: any;
+  provided?: DraggableProvided;
 }
 
 const typeoffieldset = [
