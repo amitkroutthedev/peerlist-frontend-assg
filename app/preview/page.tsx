@@ -4,7 +4,7 @@ import { useFormStore } from "@/store/store";
 import Swal from "sweetalert2";
 
 function Page() {
-  const { formFields,setFormFields,completionPercentage } = useFormStore();
+  const { formFields,setFormFields } = useFormStore();
 
   const handleInputChange = (id: string, value: string) => {
     setFormFields(formFields.map(field => 
@@ -12,7 +12,7 @@ function Page() {
     ));
   };
   const handleSubmit = () => {
-    let body: { [key: string]: string } = {};
+    const body: { [key: string]: string } = {};
     let hasEmptyField = false; 
 
     formFields.forEach(element => {
