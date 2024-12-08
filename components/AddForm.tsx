@@ -1,5 +1,5 @@
 "use client";
-import { DragDropContext } from "@hello-pangea/dnd";
+import { DragDropContext, DropResult } from "@hello-pangea/dnd";
 import { Droppable } from "@hello-pangea/dnd";
 import { Draggable } from "@hello-pangea/dnd";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
@@ -37,7 +37,7 @@ function AddForm() {
     setFormFields([...formFields, newField]);
   };
 
-  const handleDragEnd = (result: any) => {
+  const handleDragEnd = (result: DropResult) => {
     const { destination, source } = result;
     if (!destination) {
       return;
