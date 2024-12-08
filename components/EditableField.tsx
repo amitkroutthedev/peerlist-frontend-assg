@@ -1,28 +1,25 @@
 "use client";
 
-import * as React from "react";
-import { LuGripVertical } from "react-icons/lu";
+import { FormField } from "@/interface/interface";
+import { cn } from "@/lib/utils";
+import { useFormStore } from "@/store/store";
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOption,
+  ListboxOptions
+} from "@headlessui/react";
+import { AiOutlineLink } from "react-icons/ai";
+import { CgAdd } from "react-icons/cg";
+import { CiTextAlignLeft } from "react-icons/ci";
 import {
   IoCalendarOutline,
   IoChevronDown,
   IoRadioButtonOn,
 } from "react-icons/io5";
-import { cn } from "@/lib/utils";
-import { useFormStore } from "@/store/store";
+import { LuGripVertical } from "react-icons/lu";
 import { MdOutlineShortText } from "react-icons/md";
-import { CiTextAlignLeft } from "react-icons/ci";
-import { AiOutlineLink } from "react-icons/ai";
-import {
-  Listbox,
-  ListboxButton,
-  ListboxOption,
-  ListboxOptions,
-  Checkbox,
-} from "@headlessui/react";
-import { FormField } from "@/interface/interface";
-import { FaCircleCheck } from "react-icons/fa6";
 import { Button } from "./ui/Button";
-import { CgAdd } from "react-icons/cg";
 
 interface EditableFieldProps {
   className?: string;

@@ -32,20 +32,16 @@ function AddForm() {
       helperText: "",
     };
     if (type === "Single select") {
-      newField.options = []; // Only add 'options' if type is "Single select"
+      newField.options = []; 
     }
     setFormFields([...formFields, newField]);
   };
 
   const handleDragEnd = (result: any) => {
     const { destination, source } = result;
-
-    // If dropped outside the list, return early
     if (!destination) {
       return;
     }
-
-    // If dropped in the same position, return early
     if (
       destination.droppableId === source.droppableId &&
       destination.index === source.index
