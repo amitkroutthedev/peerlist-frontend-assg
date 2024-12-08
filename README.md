@@ -18,7 +18,14 @@ Task: Create a Next.js app for a form builder.
 2. Submitted forms not shown in a table.
 3. No storage is maintained in local/session storage and in application
 4. Some Icons are not same as shown in Figma
+
+## Demo
+
 ## Major Packages
+
+
+https://github.com/user-attachments/assets/23de780f-d95d-459d-8597-cbddb5c4db3f
+
 
 - TailwindCSS,@headlessui/react,class-variance-authority,clsx,tailwind-merge - _For styling purpose_
 - Zustand - _For store mangement across pages and components_
